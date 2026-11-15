@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>قعدة غريب</title>
+<meta name="description" content="قعدة غريب: الكل بيعرف الكلمة إلا الغريب. لعبة جماعية من الموبايلات. إعداد م. إياد حلوبي">
+<meta name="theme-color" content="#B5483A">
+<meta property="og:title" content="قعدة غريب">
+<meta property="og:description" content="الكل بيعرف الكلمة… إلا الغريب">
+<meta property="og:image" content="icon-512.png">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/changa-arabic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- كرسي عيلة «تحدّي ولعب» الرسمي (بين باغ) من دليل الهوية -->
+    <symbol id="ch-play" viewBox="0 0 200 200"><circle cx="100" cy="100" r="94" fill="#B5483A" stroke="#1C1A17" stroke-width="8"/><g transform="translate(100 104) scale(.74) translate(-100 -115)"><ellipse cx="100" cy="180" rx="66" ry="7" fill="#1C1A17" opacity=".18"/><path d="M36 172c-12-34 4-76 36-98c26-18 60-14 76 10c18 26 22 58 16 88c-34 14-96 14-128 0z" fill="#C9962E" stroke="#1C1A17" stroke-width="5" stroke-linejoin="round"/><path d="M58 172c6-24 26-40 54-40c22 0 40 14 48 34" fill="none" stroke="#1C1A17" stroke-width="4" stroke-linecap="round" opacity=".55"/><path d="M76 84q-8 18-4 36M124 82q12 16 10 36M98 70q2 10 0 18" fill="none" stroke="#1C1A17" stroke-width="3.5" stroke-linecap="round" opacity=".4"/><path d="M100 66q-6-8 0-14" fill="none" stroke="#1C1A17" stroke-width="4" stroke-linecap="round"/><circle cx="100" cy="50" r="5" fill="#C9962E" stroke="#1C1A17" stroke-width="4"/><rect x="82" y="104" width="40" height="32" rx="10" fill="#B5483A" stroke="#1C1A17" stroke-width="4" transform="rotate(-14 102 120)"/></g></symbol>
+    <!-- أيقونات بخط رفيع -->
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H4z"/><path d="M10 20v-5h4v5"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+    <symbol id="i-fwd" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6"/><path d="M12 17h.01"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.2c2.2.6 3.5 2.6 3.5 5.8"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></symbol>
+    <symbol id="i-rotate" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></symbol>
+    <symbol id="i-flip" viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M8 7l-5 5 5 5V7zM16 7l5 5-5 5V7z"/></symbol>
+    <symbol id="i-vote" viewBox="0 0 24 24"><path d="M4 14h16v6H4z"/><path d="M8 14V5h8v9"/><path d="M10 9l1.5 1.5L14 8"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-skip" viewBox="0 0 24 24"><path d="M5 5l9 7-9 7zM18 5v14"/></symbol>
+    <symbol id="i-redo" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.7"/><path d="M4 4v6h6"/></symbol>
+    <symbol id="i-stop" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></symbol>
+    <symbol id="i-door" viewBox="0 0 24 24"><path d="M14 3H6v18h8"/><path d="M11 12h10M18 9l3 3-3 3"/></symbol>
+    <symbol id="i-glasses" viewBox="0 0 24 24"><path d="M2 10h20"/><rect x="3" y="10" width="7" height="5" rx="2"/><rect x="14" y="10" width="7" height="5" rx="2"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></symbol>
+  </defs>
+</svg>
+<div class="wrap" id="app"></div>
+<div id="layer"></div>
+<script src="qrcode.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: qa3da-ghareeb
+    runtime: node
+    plan: free
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: ADMIN_KEY
+        generateValue: true
